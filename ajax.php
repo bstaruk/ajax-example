@@ -2,7 +2,7 @@
 //Put form elements into post variables (this is where you'd sanitize your data)
 $field1 = $_POST['field1'];
 
-//Establish values for future use 
+//Establish values that will be returned via ajax
 $return = array();
 $return['msg'] = '';
 $return['error'] = false;
