@@ -6,17 +6,12 @@
 	<script type="text/javascript" src="jquery.js"></script>
 </head>
 <body>
+	<ul id="info1">
+		<li>Put anything in the field below.</li>
+	</ul>
 	<form id="form1">
-		<ul id="info1"></ul>
-		<div>
-			<label for="field1">Field Name:</label>
-			<input class="text" type="text" name="field1" id="field1" value="">
-			<span class="clr"></span>
-		</div>
-		<div>
-			<input type="submit" class="submit" name="submit" id="submit" value="Submit">
-			<span class="clr"></span>
-		</div>
+		<input type="text" name="field1" id="field1" value="">
+		<input type="submit" name="submit" id="submit" value="Submit Form">
 	</form>
 	<script>
 	$('#form1').submit(function(event) {

@@ -15,7 +15,7 @@ if (!isset($field1) | empty($field1)){
 
 //Begin form success functionality
 if ($return['error'] === false){
-	$return['msg'] = '<li>Success!</li>';
+	$return['msg'] = '<li>SUCCESS!</li>';
 }
 
 //Return results
