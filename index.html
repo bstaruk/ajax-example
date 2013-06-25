@@ -7,13 +7,13 @@
 </head>
 <body>
 	<form id="form1">
-		<ul class="hfInfo"></ul>
-		<div class="hfRow">
+		<ul id="info1"></ul>
+		<div>
 			<label for="email">Email Address:</label>
 			<input class="text" type="text" name="email" id="email" value="">
 			<span class="clr"></span>
 		</div>
-		<div class="hfRow">
+		<div>
 			<input type="submit" class="submit" name="submit" id="submit" value="Submit">
 			<span class="clr"></span>
 		</div>
@@ -28,7 +28,7 @@
 			dataType: 'json',
 			success: function (data) {
 				console.log(data);
-				$('#form1 .hfInfo').html(data.msg);
+				$('#info1').html(data.msg);
 			}
 		});
 	});
