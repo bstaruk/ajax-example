@@ -1,20 +1,19 @@
 <?php
 //Put form elements into post variables (this is where you'd sanitize your data)
-$email = $_POST['email'];
+$field1 = $_POST['field1'];
 
 //Establish values for future use 
 $return = array();
 $return['msg'] = '';
 $return['error'] = false;
 
-//Begin form validation
-//THIS IS JUST AN EXAMPLE, DOES NOT ACTUALLY VALIDATE AN EMAIL ADDRESS
-if (!isset($email) | empty($email)){
+//Begin form validation functionality
+if (!isset($field1) | empty($field1)){
 	$return['error'] = true;
-	$return['msg'] .= '<li>Error: Invalid Email Address</li>';
+	$return['msg'] .= '<li>Error: Field1 is empty.</li>';
 }
 
-//Validation is successful
+//Begin form success functionality
 if ($return['error'] === false){
 	$return['msg'] = '<li>Success!</li>';
 }
