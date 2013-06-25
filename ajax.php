@@ -9,8 +9,7 @@ $return['error'] = false;
 
 //Begin form validation
 //THIS IS JUST AN EXAMPLE, DOES NOT ACTUALLY VALIDATE AN EMAIL ADDRESS
-if (!isset($email) | empty($email))
-{
+if (!isset($email) | empty($email)){
 	$return['error'] = true;
 	$return['msg'] .= '<li>Error: Invalid Email Address</li>';
 }
