@@ -18,7 +18,7 @@ class ajaxValidate {
 
 		//Begin form success functionality
 		if ($return['error'] === false){
-			$return['msg'] = '<li>SUCCESS!</li>';
+			$return['msg'] = '<li>Success Message</li>';
 		}
 
 		//Return json encoded results
